@@ -1,0 +1,16 @@
+{
+  "name": "gulp-ng-require",
+  "version": "0.0.1",
+  "description": "Require and register controllers, directives and services as a gulp task.",
+  "main": "gulp-ng-require.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marc1404/gulp-ng-require.git"
+  },
+  "author": "marc1404",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marc1404/gulp-ng-require/issues"
+  },
+  "homepage": "https://github.com/marc1404/gulp-ng-require#readme"
+}
