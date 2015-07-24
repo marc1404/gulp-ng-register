@@ -15,7 +15,7 @@ module.exports = function(fileName){
         var parsedFile = path.parse(file.path);
 
         if(parsedFile.ext === '.js') {
-            var requirePath = './' + file.path.replace(file.base, '').replace('\\', '/');
+            var requirePath = './' + file.path.replace(file.base, '').replace(/\\/g, '/');
             var requireStatement = 'require(\'' + requirePath + '\')';
             contents += '\tregister(' + requireStatement + ');' + endOfLine;
         }
@@ -24,14 +24,16 @@ module.exports = function(fileName){
     }
 
     function flush(callback){
-        contents = registerTemplate.replace('/* inject */', contents);
+        if(contents.length > 0) {
+            contents = registerTemplate.replace('/* inject */', contents);
 
-        var file = new File({
-            path: path.join(process.cwd(), fileName),
-            contents: new Buffer(contents)
-        });
+            var file = new File({
+                path: path.join(process.cwd(), fileName),
+                contents: new Buffer(contents)
+            });
 
-        this.push(file);
+            this.push(file);
+        }
 
         return callback();
     }
