@@ -1,6 +1,6 @@
 {
   "name": "gulp-ng-register",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Require and register controllers, directives and services as a gulp task.",
   "main": "gulp-ng-register.js",
   "repository": {

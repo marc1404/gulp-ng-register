@@ -15,7 +15,7 @@ module.exports = function(fileName){
         var parsedFile = path.parse(file.path);
 
         if(parsedFile.ext === '.js') {
-            var requirePath = './' + file.path.replace(file.base, '').replace(/\\/g, '/');
+            var requirePath = './' + file.path.replace(file.base, '').split(path.sep).join('/');
             var requireStatement = 'require(\'' + requirePath + '\')';
             contents += '\tregister(' + requireStatement + ');' + endOfLine;
         }
