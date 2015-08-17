@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var ngRequire = require('../gulp-ng-register');
+var ngRequire = require('../lib/gulp-ng-register');
 
 gulp.task('default', function(){
     return gulp.src('app/**/*')
