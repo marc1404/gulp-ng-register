@@ -1,8 +1,8 @@
 {
   "name": "gulp-ng-register",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "Require and register controllers, directives and services as a gulp task.",
-  "main": "gulp-ng-register.js",
+  "main": "lib/gulp-ng-register.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marc1404/gulp-ng-require.git"
@@ -14,10 +14,28 @@
   },
   "homepage": "https://github.com/marc1404/gulp-ng-require#readme",
   "devDependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5",
+    "should": "^7.0.4"
   },
   "dependencies": {
     "gulp-util": "^3.0.6",
     "through2": "^2.0.0"
-  }
+  },
+  "scripts": {
+    "test": "node --harmony --harmony_arrow_functions node_modules/istanbul/lib/cli.js cover --hook-run-in-context --report lcovonly node_modules/mocha/bin/_mocha"
+  },
+  "engines": {
+    "node": ">= 0.11.16",
+    "iojs": ">= 1.0.0"
+  },
+  "keywords": [
+    "koa",
+    "auth",
+    "middleware",
+    "jwt",
+    "token",
+    "login"
+  ]
 }

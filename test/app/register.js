@@ -4,6 +4,8 @@ module.exports = app => {
 	register(require('./test.directive.js'));
 	register(require('./test.service.js'));
 	register(require('./nested/nested.controller.js'));
+	register(require('./nested/test.service.js'));
+	register(require('./nested/deeper/test.controller.js'));
 
     function register(module){
         if(module.controller){
