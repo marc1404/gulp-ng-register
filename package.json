@@ -31,11 +31,12 @@
     "iojs": ">= 1.0.0"
   },
   "keywords": [
-    "koa",
-    "auth",
-    "middleware",
-    "jwt",
-    "token",
-    "login"
+    "gulp",
+    "angular",
+    "ng",
+    "register",
+    "require",
+    "bootstrap",
+    "angularjs"
   ]
 }
