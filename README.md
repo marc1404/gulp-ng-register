@@ -15,6 +15,14 @@ $ npm install gulp-ng-register
   
 ## Usage
 ```javascript
+var gulp = require('gulp');
+var ngRegister = require('gulp-ng-register');
+
+gulp.task('register', function(){
+  return gulp.src('app/client/**/*.{controller,directive,service}.js')
+    .pipe(ngRegister())
+    .pipe(gulp.dest('/app/client'));
+});
 ```
   
 ## Test
