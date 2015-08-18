@@ -1,13 +1,13 @@
 # gulp-ng-register
-[![npm](https://img.shields.io/npm/v/gulp-ng-register.svg?style=flat-square)](https://www.npmjs.com/package/ng-register)
-[![Travis](https://img.shields.io/travis/marc1404/gulp-ng-register.svg?style=flat-square)](https://travis-ci.org/marc1404/ng-register)
-[![Code Climate](https://img.shields.io/codeclimate/github/marc1404/gulp-ng-register.svg?style=flat-square)](https://codeclimate.com/github/marc1404/ng-register)
-[![Code Climate](https://img.shields.io/codeclimate/coverage/github/marc1404/gulp-ng-register.svg?style=flat-square)](https://codeclimate.com/github/marc1404/ng-register/coverage)
-[![npm](https://img.shields.io/npm/l/gulp-ng-register.svg?style=flat-square)](https://github.com/marc1404/ng-register/blob/master/LICENSE)
-[![npm](https://img.shields.io/npm/dm/gulp-ng-register.svg?style=flat-square)](https://www.npmjs.com/package/ng-register)
+[![npm](https://img.shields.io/npm/v/gulp-ng-register.svg?style=flat-square)](https://www.npmjs.com/package/gulp-ng-register)
+[![Travis](https://img.shields.io/travis/marc1404/gulp-ng-register.svg?style=flat-square)](https://travis-ci.org/marc1404/gulp-ng-register)
+[![Code Climate](https://img.shields.io/codeclimate/github/marc1404/gulp-ng-register.svg?style=flat-square)](https://codeclimate.com/github/marc1404/gulp-ng-register)
+[![Code Climate](https://img.shields.io/codeclimate/coverage/github/marc1404/gulp-ng-register.svg?style=flat-square)](https://codeclimate.com/github/marc1404/gulp-ng-register/coverage)
+[![npm](https://img.shields.io/npm/l/gulp-ng-register.svg?style=flat-square)](https://github.com/marc1404/gulp-ng-register/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/dm/gulp-ng-register.svg?style=flat-square)](https://www.npmjs.com/package/gulp-ng-register)
 
-[![David](https://img.shields.io/david/marc1404/gulp-ng-register.svg?style=flat-square)](https://github.com/marc1404/ng-register/blob/master/package.json)
-[![David](https://img.shields.io/david/dev/marc1404/gulp-ng-register.svg?style=flat-square)](https://github.com/marc1404/ng-register/blob/master/package.json)
+[![David](https://img.shields.io/david/marc1404/gulp-ng-register.svg?style=flat-square)](https://github.com/marc1404/gulp-ng-register/blob/master/package.json)
+[![David](https://img.shields.io/david/dev/marc1404/gulp-ng-register.svg?style=flat-square)](https://github.com/marc1404/gulp-ng-register/blob/master/package.json)
 
 ## Installation
 ```
