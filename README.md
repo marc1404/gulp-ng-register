@@ -16,7 +16,7 @@ $ npm install gulp-ng-register
   
 ## Description
 This [gulp](https://www.npmjs.com/package/gulp) plugin can be used to automatically require and register Angular controller, directive and service modules.  
-All files provided by ```gulp.src()``` will be required and registered in your Angular app.
+All files provided by ```gulp.src()``` will be required and registered in your Angular app.  
 Modules are required to export a ```name``` property and one of the following:  
 - ```controller```
 - ```directive```
@@ -44,6 +44,39 @@ gulp.task('register', function(){
   
 ## Options
 You can pass a file name to ```ngRegister()``` if you want.
+
+## Examples
+**Controller**
+```javascript
+exports.name = 'MyController';
+exports.controller = /*@ngInject*/ function MyController($scope, $http){
+	// TODO: implement your controller
+};
+```
+  
+**Directive**
+```javascript
+exports.name = 'myDirective';
+exports.directive = /*@ngInject*/ function inject(){
+	return {
+		restrict: 'E',
+	    scope: {
+	      info: '=info'
+	    },
+	    templateUrl: 'my-template.html'
+	};
+};
+```
+  
+**Service**
+```javascript
+exports.name = 'myService';
+exports.service = /*@ngInject*/ function inject(){
+	return function add(x, y){
+		return x + y;
+	};
+};
+```
 
 ## Test
 ```
