@@ -6,3 +6,9 @@ gulp.task('default', function(){
         .pipe(ngRequire())
         .pipe(gulp.dest('app'));
 });
+
+gulp.task('empty', function(){
+    return gulp.src('empty/**/*')
+        .pipe(ngRequire())
+        .pipe(gulp.dest('empty'));
+});
